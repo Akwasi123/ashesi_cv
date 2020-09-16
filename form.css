@@ -1,0 +1,60 @@
+:root{
+    font-size: 16pt;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label{
+    display: inline-block;
+    width: 240px;
+    text-align: right;
+}
+
+.finput{
+    padding: 20px;
+    align-self: center;
+}
+
+#logo{
+    width: 120px;
+    height: auto;
+    left: 20PX;
+    top: 30px;
+    position: fixed;
+}
+
+.top{
+    border: 2px solid transparent;
+    box-shadow: 3px 5px 10px grey;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+input{
+    width: 20vw;
+    height: 1vw;
+}
+
+input:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#button{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: cadetblue;
+    font-size: 0.8rem;
+    
+}
+
+#button:hover{
+    background-color: rgba(95, 158, 160, 0.8);
+}
+
