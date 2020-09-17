@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashesi CV Form</title>
     <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="form.js"></script>
 </head>
 <body>
     
@@ -12,8 +13,9 @@
         <img src="AshesiLogo.jpg" id="logo" alt="">
         <h1>ASHESI CV FORM</h1>
     </div>
-    <h1 style="text-align: center;">CV DETAILS</h1>
+    
     <form>
+        <h1 style="text-align: center;">CV DETAILS</h1>
         <div  class="finput">
             <label>First Name: </label>
             <input type="text" name="f_name" placeholder="First Name">
@@ -28,7 +30,11 @@
         </div>
         <div class="finput">
             <label>Gender: </label>
-            <input type="" name="l_name" placeholder="Last Name">
+            <select id="gender" name="gender" size="1" required>
+                <option value="" disabled selected hidden>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
         </div>
         <div class="finput">
             <label>Phone Number: </label>
@@ -36,19 +42,15 @@
         </div>
         <div class="finput">
             <label>Email: </label>
-            <input type="email" name="email" placeholder="Email">
-        </div>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>``
         <div class="finput">
             <label>Address: </label>
-            <input type="text" name="address" placeholder="Addresss">
+            <input type="text" name="address" placeholder="Address">
         </div>
         <div class="finput">
-            <button type="button" id="button">Submit</button>
+            <button type="submit" id="button">Submit</button>
         </div>
     </form>
-    <div class="container">
-        
-    </div>
-    
 </body>
 </html>

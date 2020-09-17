@@ -18,7 +18,7 @@ label{
     align-self: center;
 }
 
-#logo{
+#logo{ 
     width: 120px;
     height: auto;
     left: 20PX;
@@ -29,7 +29,7 @@ label{
 .top{
     border: 2px solid transparent;
     box-shadow: 3px 5px 10px grey;
-    background-color: white;
+    background-color: bisque;
     text-align: center;
     font-size: 1.5rem;
     margin: 0 10px;
@@ -37,11 +37,11 @@ label{
 
 input{
     width: 20vw;
-    height: 1vw;
+    height: 2vw;
 }
 
 input:hover{
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #button{
@@ -49,12 +49,22 @@ input:hover{
     height: 30px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: cadetblue;
+    background-color: bisque;
     font-size: 0.8rem;
+    box-shadow: 3px 5px 10px grey;
+    border: transparent;
     
 }
 
 #button:hover{
-    background-color: rgba(95, 158, 160, 0.8);
+    background-color: rgba(221, 205, 185, 0.8);
 }
 
+#gender{
+    width: 20.5vw;
+    height: 2vw;
+}
+
+select:hover{
+    border: 2px solid black;
+}
