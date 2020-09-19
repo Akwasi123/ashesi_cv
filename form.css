@@ -5,6 +5,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 label{
@@ -14,8 +15,9 @@ label{
 }
 
 .finput{
-    padding: 20px;
+    padding: 15px;
     align-self: center;
+    height: 50px;
 }
 
 #logo{ 
@@ -31,7 +33,7 @@ label{
     box-shadow: 3px 5px 10px grey;
     background-color: bisque;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0 10px;
 }
 
@@ -68,3 +70,13 @@ input:hover{
 select:hover{
     border: 2px solid black;
 }
+
+.nerror-msg{
+    display: block;
+    text-indent: 200px;
+    font-size: 0.8rem;
+    color: red;
+}
+
+
+
