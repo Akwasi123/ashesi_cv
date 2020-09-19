@@ -2,92 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashesi CV Template</title>
-    <link rel="stylesheet" type="text/css" href="cv.css">
+    <meta name="vieport" content="idth=device-idth, initial-scale=1.0">
+    <title>Ashesi CV Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    
 </head>
 <body>
-    <div class="titlespace">
-        <ul id="titleelements">
-            <li><strong>NAME</strong></li>
-            <li>Postal Address</li>
-            <li>Phone Number</li>
-            <li>Email</li>
-        </ul>
+    <!---->
+    <div class="top">
+        <img src="AshesiLogo.jpg" id="logo" alt="">
+        <h1 id="name">ASHESI CV FORM</h1>
     </div>
-    <div class="container">
-        <div class="box" id="objective">
-            <h3>OBJECTIVE</h3>
-            <hr>
-            Seeking a challenging entry-level position in Sales and Marketing 
-            with considerable opportunities for growth.
+
+    <!--Form for people to enter their details-->
+    <form id="_form" method="POST">
+        <!--Field to collect first name-->
+        <h1 style="text-align: center; font-size: 1.5rem;">CV DETAILS</h1>
+        <div  class="finput">
+            <label>First Name: </label>
+            <input type="text" name="f_name" id="first" placeholder="First Name" class="">
+            <span style= "text-align: center; text-indent: 50px;" class="nerror-msg" id="f-error-msg"></span>
         </div>
-        <div class="box" id="education">
-            <h3>EDUCATION</h3>
-            <hr>
-            <strong>ASHESI UNIVERSITY COLLEGE</strong><span class="dates"><strong>Accra, Greater Accra</strong></span><br />
-            BSc. Business Administration<span class="dates">August 2004 – May 2007</span>
-            <ul>
-                <li><strong>Relevant Courses: </strong><span> Social Theory Entrepreneurship Marketing 
-                    Competitive Strategy Development Economics
-                    Investment Human Resource Management
-                </span></li>
-            </ul>
-            
-        </div>
-        <div class="box" id="objective">
-            <h3>ACHIEVEMENTS/AWARDS</h3>
-            <hr>
-            Dean's List 2020
+        <!--space to insert error messages-->
         
-        </div>
-        <div class="box">
-            <h3>WORK EXPERIENCES</h3>
-            <hr>
-            <strong>Summer Intern, ABC Limited</strong><span class="dates"><strong>Accra, Greater Accra</strong></span><br />
-            <span class="dates">July - Aug, 2007</span>
-            <ul>
-                <li>Prepared financial valuations and modeling for Access Bank, Nigeria </li>
-                <li>Prepared 5-year financial projections for Access Bank, Nigeria </li>
-                <li>Prepared business summary for a Business Plan for funding</li>
-                <li>Prepared a seven page research report on the bank </li>
-            </ul>
-            <strong>President, ARM </strong><span class="dates"><strong>Accra, Greater Accra</strong></span><br />
-            <span class="dates">Dec. 2016 - present</span>
-            <ul>
-                <li>Managed club and presided over club activities and Editorial Meetings </li>
-                <li>Organized seminars involving key figures at Ashesi to dialogue on the role of leadership in Africa.</li>
-                <li>Liaised with visiting key personalities for seminars and events </li>
-                <li>Increased membership and developed club programs by 22% and 40% respectively</li>
-            </ul>
-            <strong>Marketing Executive, Crisps Radio, Tamale. </strong><span class="dates"><strong>Accra, Greater Accra</strong></span><br />
-            <span class="dates">June - August 2005</span>
-            <ul>
-                <li>Assisted the Marketing Manager to expand the market share of company</li>
-                <li>Wrote jingles, Live Presenter Mentions (LPMs) and promotional announcements.</li>
-                <li>Produced an elite talk show dubbed (Excellent Talk with Excellent Personalities) </li>
-                <li>Wrote proposals for live programs, promotions and adverts for products and companies.</li>
-            </ul>
-        </div>
-        <div class="box">
-            <h3>OTHER SKILLS</h3>
-            <hr>
-            Communication—brief description<br />
-            Computer—state key components<br />
-            Leadership—mention specific leadership roles and accomplishments 
-        </div>
-        <div class="box">
-            <h3>CO-CURRICULAR ACTIVITIES</h3>
-            <hr>
-            Clubs etc 
-        </div>
-        <div class="box">
-            <h3>REFERENCES</h3>
-            <hr>
-            Available upon request 
+        
+        <!--field to collect middle name 'not class=""'-->
+        <div  class="finput">
+            <label>Middle Name: </label>
+            <input type="text" name="m_name" id="middle" placeholder="Middle Name">
+            <span style= "text-align: center; text-indent: 50px;" class="nerror-msg" id="m-error-msg"></span>
         </div>
         
+
+        <!--field to collect last name-->
+        <div class="finput">
+            <label>Last Name: </label>
+            <input type="text" name="l_name"  id="last" placeholder="Last Name" class="">
+            <span style= "text-align: center; text-indent: 50px;" class="nerror-msg" id="l-error-msg"></span> 
         </div>
-    </div>
+        <!--space to insert error messages-->
+        
+
+        <!--dropdon menu for gender selection-->
+        <div class="finput">
+            <label>Gender: </label>
+            <select id="gender" name="gender" id="gender" size="1">
+                <option value="" disabled selected hidden>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br />
+            <span style= "text-align: center; text-indent: 10px;" class="error-msg" id="g-error-msg"></span>
+        </div>
+        <!--space to insert error messages-->
+        
+
+
+        <!--field to collect phone number-->
+        <div class="finput">
+            <label>Phone Number: </label>
+            <input type="text" name="phone" id="last" placeholder="Phone Number" class="">
+            <br />
+            <span style= "text-align: center; text-indent: 90px;" class="error-msg" id="p-error-msg"></span>
+        </div>
+        <!--space to insert error messages-->
+        
+
+        <!--field to collect email-->
+        <div class="finput">
+            <label>Email: </label>
+            <input type="email" name="email" id="email" placeholder="student@example.com" class="">
+            <br />
+            <span style= "text-align: center; text-indent: 50px;" class="nerror-msg" id="e-error-msg"></span>
+        </div>
+        <!--space to insert error messages-->
+        
+
+        <!--field to collect address-->
+        <div class="finput">
+            <label>Address: </label>
+            <input type="text" name="address" id="address" placeholder="Address" class="">
+            <br />
+            <span style= "text-align: center; text-indent: 40px;" class="error-msg" id="a-error-msg"></span>
+        </div>
+        <!--space to insert error messages-->
+        
+
+        <!--button to submit form after completion-->
+        <div class="finput">
+            <button type="submit" id="button">Submit</button>
+        </div>
+    </form>
 </body>
+<script src="form.js"></script>
 </html>
