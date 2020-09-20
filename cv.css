@@ -1,3 +1,4 @@
+
 .titlespace{
     display: flex;
     justify-content: center;
@@ -8,7 +9,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10vw;
+    padding: 2vw 5vw;
+    border: 3px solid transparent;
+    margin: 0 20vw;
+    box-shadow: 5px 3px 10px grey, -5px -3px 10px grey;
+    
 }
 
 #titleelements li{
@@ -28,4 +33,24 @@
 
 h3{
     height: 5px;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: bisque;
+    font-size: 0.8rem;
+    box-shadow: 3px 5px 10px grey;
+    border: transparent;
+}
+
+button:hover{
+    background-color: rgba(221, 205, 185, 0.8);
+}
+
+#gtf{
+
+    float: right;
 }

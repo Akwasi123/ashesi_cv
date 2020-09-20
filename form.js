@@ -59,16 +59,18 @@ function onSubmit(event){
             //case to check if the name has a correct format
             case err[0]:
                 if(!validateName(fname)){ 
-                    document.getElementById("f-error-msg").innerHTML="Please enter first name";
+                    document.getElementById("f-error-msg").innerHTML="*Please enter first name";
+                    document.getElementById("first").style.borderColor = "red";
                 }
                 else{
+                    document.getElementById("first").style.borderColor = "black";
                     document.getElementById("f-error-msg").innerHTML="";
                 }
 
             //case to check if the name has a correct format
             case err[1]:
                 if(!validateName(mname)){ 
-                    document.getElementById("m-error-msg").innerHTML="Please enter middle name";
+                    document.getElementById("m-error-msg").innerHTML="";
                 }
                 else{
                     document.getElementById("m-error-msg").innerHTML="";
@@ -78,9 +80,11 @@ function onSubmit(event){
             //case to check if the name has a correct format
             case err[2]:
                 if(!validateName(lname)){ 
-                    document.getElementById("l-error-msg").innerHTML="Please enter last name";
+                    document.getElementById("l-error-msg").innerHTML="*Please enter last name";
+                    document.getElementById("last").style.borderColor = "red";
                 }
                 else{
+                    document.getElementById("last").style.borderColor = "black";
                     document.getElementById("l-error-msg").innerHTML="";
                 }
                 break;
@@ -88,9 +92,11 @@ function onSubmit(event){
             //case to check if the name has a correct format    
             case err[3]:
                 if(!validateEmail(email)){
-                    document.getElementById("e-error-msg").innerHTML="Please enter valid email";
+                    document.getElementById("e-error-msg").innerHTML="*Please enter valid email";
+                    document.getElementById("email").style.borderColor = "red";
                 }
                 else{
+                    document.getElementById("email").style.borderColor = "black";
                     document.getElementById("e-error-msg").innerHTML="";
                 }
                 break;
