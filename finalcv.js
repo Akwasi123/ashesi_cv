@@ -14,3 +14,4 @@ document.getElementById("name").innerHTML = firstName +" "+middleName+" "+lastNa
 document.getElementById("address").innerHTML = address;
 document.getElementById("phoneNumber").innerHTML = phoneNumber;
 document.getElementById("email").innerHTML = email;
+document.getElementById("gender").innerHTML = gender;

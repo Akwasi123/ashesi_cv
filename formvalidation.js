@@ -1,5 +1,8 @@
 const form = document.getElementById("_form");
 
+function confirmOption(){
+    return confirm("Are you sure you want to submit this form?");
+}
 
 function onSubmit(e){
     e.preventDefault();
@@ -30,11 +33,11 @@ function onSubmit(e){
     const email_format = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if(!name_format.test(fname.value)){
-        alert("Wrong format");
+        alert("Enter first name");
     }
 
     if(!name_format.test(lname.value)){
-        alert("Wrong format for last name");
+        alert("Enter last name");
     }
 
     if(!email_format.test(email.value)){
@@ -44,8 +47,8 @@ function onSubmit(e){
     if(!number_format.test(phoneNumber.value)){
         alert("Enter a valid Phone Number");
     }
+    
     else{
-        
         location.href = "cv.html";
     }
 }

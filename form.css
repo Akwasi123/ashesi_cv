@@ -2,28 +2,38 @@
     font-size: 12pt;
 }
 
-@media(min-width: 800px){
-    form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
+@media only screen and (min-width: 800px){
     #logo{ 
-        width: 120px;
-        height: 100px;
+        max-width: 120px;
+        max-height: 100px;
         left: 20PX;
         top: 10px;
         position: fixed;
     }
+
+    
 }
 
-
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 
 label{
     display: inline-block;
     width: 240px;
     text-align: right;
+    font-size: 1rem;
+}
+.top{
+    border: 2px solid transparent;
+    box-shadow: 3px 5px 10px grey;
+    background-color: bisque;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 10px;
 }
 
 .finput{
@@ -33,15 +43,11 @@ label{
 }
 
 
-
-.top{
-    border: 2px solid transparent;
-    box-shadow: 3px 5px 10px grey;
-    background-color: bisque;
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0 10px;
+#gender{
+    width: 20.5vw;
+    height: 20px;
 }
+
 
 input{
     width: 20vw;
@@ -71,15 +77,9 @@ input:hover{
     background-color: rgba(221, 205, 185, 0.8);
 }
 
-#gtf{
-    margin-left: 10px;
-}
 
 
-#gender{
-    width: 20.5vw;
-    height: 20px;
-}
+
 
 select:hover{
     border: 2px solid black;
