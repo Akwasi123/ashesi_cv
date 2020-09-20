@@ -87,5 +87,10 @@ select:hover{
     color: red;
 }
 
+#phone[type=text]:invalid{
+    border-color: red;
+}
 
-
+#middle[type=text]:invalid{
+    border-color: red;
+}

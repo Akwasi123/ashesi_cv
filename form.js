@@ -34,6 +34,25 @@ function validateName(names){
     }
 }
 
+
+/**
+ * 
+ */
+function checkMiddlename(){
+    document.getElementById("m-error-msg").innerHTML="*Enter a valid name format";
+}
+
+function checkPhoneNumber(){
+    const phone = document.getElementById("phone");
+    if(phone.value.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)){
+        document.getElementById("p-error-msg").innerHTML="";
+    }
+    else{
+        document.getElementById("p-error-msg").innerHTML="*Wrong number format.";
+    }
+}
+
+
 /**
  * @function onSubmit
  * connects to listener
@@ -43,15 +62,11 @@ function onSubmit(event){
 
     //assign the specific elements of the form array to variables
     const fname = document.getElementById("first");
-    const mname = document.getElementById("middle");
     const lname = document.getElementById("last");
     const gender = form.elements["gender"].selectedIndex;
-    const phn = form.elements["phone"].value;
     const email = document.getElementById("email");
     const address = form.elements["address"].value;
 
-    
-    const phnum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     err = document.getElementsByClassName("nerror-msg");
     for(i = 0; i < err.length; i++){
         let state = err[i];
@@ -65,15 +80,6 @@ function onSubmit(event){
                 else{
                     document.getElementById("first").style.borderColor = "black";
                     document.getElementById("f-error-msg").innerHTML="";
-                }
-
-            //case to check if the name has a correct format
-            case err[1]:
-                if(!validateName(mname)){ 
-                    document.getElementById("m-error-msg").innerHTML="";
-                }
-                else{
-                    document.getElementById("m-error-msg").innerHTML="";
                 }
                 break;
             
@@ -90,7 +96,7 @@ function onSubmit(event){
                 break;
             
             //case to check if the name has a correct format    
-            case err[3]:
+            case err[4]:
                 if(!validateEmail(email)){
                     document.getElementById("e-error-msg").innerHTML="*Please enter valid email";
                     document.getElementById("email").style.borderColor = "red";
@@ -100,6 +106,7 @@ function onSubmit(event){
                     document.getElementById("e-error-msg").innerHTML="";
                 }
                 break;
+
         }
     }
 
