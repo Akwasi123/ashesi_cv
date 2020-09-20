@@ -1,3 +1,7 @@
+:root{
+    font-size: 12pt;
+}
+
 @media(min-width: 800px){
     .titlespace{
         display: flex;
@@ -17,14 +21,18 @@
         
     }
     
-    #titleelements li{
-        display: block;
-        list-style: none;
-        font-size: 1rem;
-        text-align: center;
-    }
+    
+}
+#titleelements li{
+    display: block;
+    list-style: none;
+    text-align: center;
 }
 
+#name{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
 
 .box{
     border: 2px solid transparent;

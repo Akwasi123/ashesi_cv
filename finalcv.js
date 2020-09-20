@@ -1,8 +1,16 @@
 /**
  * @author Akwasi Appiadjei Asante-Krobea
  */
-document.getElementById("name").innerHTML=localStorage.firstname +" "+localStorage.midname+" "+localStorage.lastname;
-document.getElementById("address").innerHTML = localStorage.address;
-document.getElementById("phoneNumber").innerHTML = localStorage.phoneNumber;
-document.getElementById("email").innerHTML = localStorage.emailAddress;
-document.getElementById("gender").innerHTML = localStorage.gender;
+
+firstName = localStorage.getItem("first");
+middleName = localStorage.getItem("middle");
+lastName = localStorage.getItem("last");
+gender = localStorage.getItem("gender");
+phoneNumber = localStorage.getItem("phone");
+email = localStorage.getItem("email");
+address = localStorage.getItem("address");
+
+document.getElementById("name").innerHTML = firstName +" "+middleName+" "+lastName;
+document.getElementById("address").innerHTML = address;
+document.getElementById("phoneNumber").innerHTML = phoneNumber;
+document.getElementById("email").innerHTML = email;

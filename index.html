@@ -29,7 +29,7 @@
         <!--field to collect middle name 'not class=""'-->
         <div  class="finput">
             <label>Middle Name: </label>
-            <input type="text" name="m_name" id="middle" placeholder="Middle Name" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" oninvalid="checkMiddlename()">
+            <input type="text" name="m_name" id="middle" placeholder="Middle Name">
             <span style= "text-align: center; padding-left: 10%;" class="nerror-msg" id="m-error-msg"></span>
         </div>
         
@@ -61,7 +61,7 @@
         <!--field to collect phone number-->
         <div class="finput">
             <label>Phone Number: </label>
-            <input type="text" name="phone" id="phone" placeholder="Phone Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" oninvalid="checkPhoneNumber()">
+            <input type="text" name="phone" id="phone" placeholder="Phone Number">
             <br />
             <span style= "text-align: center; padding-left: 10%;" class="nerror-msg" id="p-error-msg"></span>
         </div>
@@ -90,10 +90,9 @@
 
         <!--button to submit form after completion-->
         <div class="finput">
-            <button type="submit" class="button" id="submit">Submit</button>
+            <input name= "submit" type="submit" value="Submit" class="button"></input>
         </div>
     </form>
-    
 </body>
-<script src="form.js"></script>
+<script src="formvalidation.js"></script>
 </html>
