@@ -1,27 +1,30 @@
-
-.titlespace{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2vw 5vw;
-    border: 3px solid transparent;
-    margin: 0 20vw;
-    box-shadow: 5px 3px 10px grey, -5px -3px 10px grey;
+@media(min-width: 800px){
+    .titlespace{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
     
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vw 2vw;
+        border: 3px solid transparent;
+        margin: 0 10vw;
+        box-shadow: 5px 3px 10px grey, -5px -3px 10px grey;
+        
+    }
+    
+    #titleelements li{
+        display: block;
+        list-style: none;
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
-#titleelements li{
-    display: block;
-    list-style: none;
-    font-size: 1rem;
-    text-align: center;
-}
 
 .box{
     border: 2px solid transparent;
@@ -34,6 +37,7 @@
 h3{
     height: 5px;
 }
+
 
 button{
     width: 200px;
@@ -51,6 +55,5 @@ button:hover{
 }
 
 #gtf{
-
     float: right;
 }

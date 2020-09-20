@@ -42,6 +42,9 @@ function checkMiddlename(){
     document.getElementById("m-error-msg").innerHTML="*Enter a valid name format";
 }
 
+/**
+ * 
+ */
 function checkPhoneNumber(){
     const phone = document.getElementById("phone");
     if(phone.value.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)){
@@ -62,16 +65,18 @@ function onSubmit(event){
 
     //assign the specific elements of the form array to variables
     const fname = document.getElementById("first");
+    const mname = document.getElementById("middle");
     const lname = document.getElementById("last");
-    const gender = form.elements["gender"].selectedIndex;
+    const gender = document.getElementById("gender");
+    const phone = document.getElementById("phone");
     const email = document.getElementById("email");
-    const address = form.elements["address"].value;
+    const address = document.getElementById("address");
 
     err = document.getElementsByClassName("nerror-msg");
     for(i = 0; i < err.length; i++){
         let state = err[i];
         switch(state){
-            //case to check if the name has a correct format
+            //case to check if the first name has a correct format
             case err[0]:
                 if(!validateName(fname)){ 
                     document.getElementById("f-error-msg").innerHTML="*Please enter first name";
@@ -83,6 +88,7 @@ function onSubmit(event){
                 }
                 break;
             
+                //case to check if the middle name can be submitted without input
             case err[1]:
                 if(middle.value.length == 0){
                     document.getElementById("m-error-msg").innerHTML="";
@@ -100,6 +106,7 @@ function onSubmit(event){
                 }
                 break;
             
+                //case to check if no entry for number can be submitted
             case err[3]:
                 if(phone.value.length == 0 || phone.value.length == 10){
                     document.getElementById("p-error-msg").innerHTML="";
@@ -120,6 +127,14 @@ function onSubmit(event){
         }
     }
 
+    //store data in local storage
+    localStorage.firstname = fname.value;
+    localStorage.midname = mname.value;
+    localStorage.lastname = lname.value;
+    localStorage.gender = gender.value;
+    localStorage.phoneNumber = phone.value;
+    localStorage.emailAddress = email.value;
+    localStorage.address = address.value;
 }
 
 //adds event listener to the form
