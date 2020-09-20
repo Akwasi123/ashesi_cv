@@ -83,6 +83,11 @@ function onSubmit(event){
                 }
                 break;
             
+            case err[1]:
+                if(middle.value.length == 0){
+                    document.getElementById("m-error-msg").innerHTML="";
+                }
+            
             //case to check if the name has a correct format
             case err[2]:
                 if(!validateName(lname)){ 
@@ -95,6 +100,11 @@ function onSubmit(event){
                 }
                 break;
             
+            case err[3]:
+                if(phone.value.length == 0 || phone.value.length == 10){
+                    document.getElementById("p-error-msg").innerHTML="";
+                }
+                break;
             //case to check if the name has a correct format    
             case err[4]:
                 if(!validateEmail(email)){
