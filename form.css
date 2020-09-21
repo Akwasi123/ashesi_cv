@@ -34,19 +34,19 @@ label{
 }
 
 .finput{
-    padding: 10px;
+    padding: 12px;
     height: 50px;
 }
 
 #gender{
-    width: 20.5vw;
+    width: 30.9vw;
     height: 30px;
 }
 
 
 input{
-    width: 20vw;
-    height: 2vw;
+    width: 30.5vw;
+    height: 30px;
 }
 
 input:hover{
