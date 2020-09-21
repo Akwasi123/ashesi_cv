@@ -33,8 +33,6 @@ function onSubmit(e){
         alert("Enter first name");
         return false;
     }
-    	
-//^p(ost)?[ |\.]*o(ffice)?[ |\.]*(box)?[ 0-9]*[^[a-z ]]*
 
     if(!name_format.test(lname.value)){
         alert("Enter last name");
