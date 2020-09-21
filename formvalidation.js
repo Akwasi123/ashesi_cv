@@ -25,7 +25,7 @@ function onSubmit(e){
     const address = document.getElementById("address");
     localStorage.setItem("address", address.value);
     
-    const name_format = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+    const name_format = /^[a-zA-Z].*[\s\.]*$/;
     const number_format = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
     const email_format = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -39,15 +39,15 @@ function onSubmit(e){
         return false;
     }
 
-    if(!email_format.test(email.value)){
-        alert("Enter a valid email address.");
-        return false;
-    } 
-
     if(!number_format.test(phoneNumber.value)){
         alert("Enter a valid Phone Number");
         return false;
     }
+
+    if(!email_format.test(email.value)){
+        alert("Enter a valid email address.");
+        return false;
+    } 
     
     else{
         location.href = "cv.html";
