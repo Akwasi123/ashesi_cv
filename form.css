@@ -2,45 +2,44 @@
     font-size: 12pt;
 }
 
-form{
-    display: block;
+h1{
     text-align: center;
 }
 
 #logo{ 
-    max-width: 120px;
+    max-width: 300px;
     max-height: 100px;
-    left: 20PX;
-    top: 10px;
-    position: fixed;
+}
+
+#top{
+    text-align: center;
+    border: 2px solid black;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: bisque;
+}
+
+form{
+    display: block;
+    text-align: center;
+    padding: 20px;
 }
 
 label{
     display: inline-block;
-    width: 240px;
+    width: 150px;
     text-align: right;
     font-size: 1rem;
 }
-.top{
-    width: 100%;
-    border: 2px solid transparent;
-    box-shadow: 3px 5px 10px grey;
-    background-color: bisque;
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0 10px;
-}
 
 .finput{
-    padding: 15px;
-    align-self: center;
+    padding: 10px;
     height: 50px;
 }
 
-
 #gender{
     width: 20.5vw;
-    height: 20px;
+    height: 30px;
 }
 
 
