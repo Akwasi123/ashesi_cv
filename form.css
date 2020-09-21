@@ -2,23 +2,17 @@
     font-size: 12pt;
 }
 
-@media only screen and (min-width: 800px){
-    #logo{ 
-        max-width: 120px;
-        max-height: 100px;
-        left: 20PX;
-        top: 10px;
-        position: fixed;
-    }
-
-    
+form{
+    display: block;
+    text-align: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+#logo{ 
+    max-width: 120px;
+    max-height: 100px;
+    left: 20PX;
+    top: 10px;
+    position: fixed;
 }
 
 label{
@@ -76,10 +70,6 @@ input:hover{
 .button:hover{
     background-color: rgba(221, 205, 185, 0.8);
 }
-
-
-
-
 
 select:hover{
     border: 2px solid black;

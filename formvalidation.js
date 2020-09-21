@@ -1,8 +1,5 @@
 const form = document.getElementById("_form");
 
-function confirmOption(){
-    return confirm("Are you sure you want to submit this form?");
-}
 
 function onSubmit(e){
     e.preventDefault();
@@ -34,18 +31,24 @@ function onSubmit(e){
 
     if(!name_format.test(fname.value)){
         alert("Enter first name");
+        return false;
     }
+    	
+//^p(ost)?[ |\.]*o(ffice)?[ |\.]*(box)?[ 0-9]*[^[a-z ]]*
 
     if(!name_format.test(lname.value)){
         alert("Enter last name");
+        return false;
     }
 
     if(!email_format.test(email.value)){
         alert("Enter a valid email address.");
+        return false;
     } 
 
     if(!number_format.test(phoneNumber.value)){
         alert("Enter a valid Phone Number");
+        return false;
     }
     
     else{
