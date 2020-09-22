@@ -1,3 +1,7 @@
+/**
+ * @author Akwasi Appiadjei Asante-Krobea
+ */
+
 //accessing the form element from the DOM
 const form = document.getElementById("_form");
 
